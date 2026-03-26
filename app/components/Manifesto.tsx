@@ -101,15 +101,14 @@ export default function Manifesto() {
                         padding: 4rem 0 !important;
                     }
                     .manifesto-container {
-                        gap: 3rem !important;
+                        gap: 0 !important;
+                        justify-content: flex-start !important;
                     }
                     .manifesto-text {
                         font-size: 2rem !important;
                     }
                     .manifesto-logo-box {
-                        width: 150px !important;
-                        height: 150px !important;
-                        padding: 1.5rem !important;
+                        display: none !important;
                     }
                 }
             `}</style>
