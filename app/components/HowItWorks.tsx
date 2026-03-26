@@ -12,7 +12,7 @@ export default function HowItWorks() {
         {
             id: "02",
             title: "Recevez des missions",
-            desc: "Nous filtrons les opportunités pour ne vous proposer que le meilleur. Nous soumettrons votre profil sous 48h à nos entreprises.",
+            desc: "Nous filtrons les opportunités pour ne vous proposer que le meilleur. Nous soumettrons votre profil sous 48h à nos entreprises partenaires*.",
         },
         {
             id: "03",

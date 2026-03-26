@@ -75,7 +75,7 @@ export default function WhyUs() {
                                 <p style={{ fontWeight: 700, fontSize: '1.1rem' }}>Lisibilité du cadre</p>
                             </div>
                             <div className="text-center d-flex items-center justify-center grid-cell-market" style={{ padding: '2.5rem 2rem', opacity: 0.5 }}>Structure complexe et segmentée</div>
-                            <div className="text-center d-flex items-center justify-center grid-cell-ours" style={{ padding: '2.5rem 2rem', background: '#FFFFFB', color: '#111', fontWeight: 800, fontSize: '1.25rem', transform: 'scale(1.02)', position: 'relative', zIndex: 2 }}>Règles simples et transparente</div>
+                            <div className="text-center d-flex items-center justify-center grid-cell-ours" style={{ padding: '2.5rem 2rem', background: '#FFFFFB', color: '#111', fontWeight: 800, fontSize: '1.25rem', transform: 'scale(1.02)', position: 'relative', zIndex: 2 }}>Règles simples et transparentes</div>
                         </div>
                     </div>
                 </div>

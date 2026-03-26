@@ -25,7 +25,7 @@ export default function Footer() {
                             />
                         </div>
                         <p style={{ fontSize: '1.25rem', color: '#111', fontFamily: 'var(--font-syne)', fontWeight: 400 }}>
-                            Le modèle juste.
+                            Faites la différence.
                         </p>
                     </div>
 
@@ -44,7 +44,14 @@ export default function Footer() {
                         </div>
                         <div className="d-flex flex-col gap-6">
                             <span style={{ fontWeight: 800, opacity: 0.2, textTransform: 'uppercase', fontSize: '0.75rem', letterSpacing: '0.1em' }}>Réseaux</span>
-                            <a href="#" className="hover-text-dark">LinkedIn</a>
+                            <a
+                                href="https://linkedin.com/company/5pourcentconsulting"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover-text-dark"
+                            >
+                                LinkedIn
+                            </a>
                         </div>
                     </div>
                 </div>
