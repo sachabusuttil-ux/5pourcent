@@ -24,7 +24,11 @@ export default function Hero() {
 
                 <div style={{ maxWidth: '650px', pointerEvents: 'auto', marginBottom: '2vh' }}> {/* Significantly lowered from 12vh to 2vh to be at the bottom */}
                     <p className="hero-headline" style={{ fontSize: '2.5rem', color: '#FFFFFB', fontFamily: 'var(--font-syne)', fontWeight: 400, marginBottom: '3rem', lineHeight: 1.3 }}>
-                        <span style={{ textDecoration: 'none' }}>Le choix d'une collaboration juste et pérenne.</span>
+                        <span style={{ textDecoration: 'none' }}>
+                            Le choix d'une collaboration
+                            <br />
+                            juste et pérenne.
+                        </span>
                     </p>
                     <div className="d-flex gap-4">
                         <a
