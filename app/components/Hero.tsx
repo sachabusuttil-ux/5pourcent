@@ -103,6 +103,8 @@ export default function Hero() {
                         padding-bottom: 1rem !important;
                     }
                     .hero-content {
+                        /* Redescendre légèrement le titre/CTA tout en restant visible sans scroll */
+                        margin-top: 5vh !important;
                         margin-bottom: 0 !important;
                     }
                     .hero-cta-btn {
