@@ -6,18 +6,24 @@ export default function HowItWorks() {
     const steps = [
         {
             id: "01",
-            title: "Créez votre profil",
+            title: "Renseignez votre profil",
             desc: "Compétences, TJM, portfolio. En quelques instants, vous serez plus proche de votre prochaine mission.",
         },
         {
             id: "02",
             title: "Recevez des missions",
-            desc: "Nous filtrons les opportunités pour ne vous proposer que le meilleur. Nous soumettrons votre profil sous 48h à nos entreprises partenaires*.",
+            desc: "Nous filtrons les opportunités pour ne vous proposer que le meilleur en accord avec vos valeurs. Nous soumettrons votre profil sous 48h à nos entreprises partenaires lorsqu'une mission correspondante nous est communiquée.",
         },
         {
             id: "03",
             title: "Collaborez, gagnez",
-            desc: "Nous vous trouvons une mission, vous gardez 95% de votre valeur. Une commission fixe de 5% HT, prélevée mensuellement.",
+            desc: (
+                <>
+                    Nous vous trouvons une mission, organisons les rencontres et l'administratif, vous gardez 95% de votre valeur*.
+                    <br />
+                    <em>*Commission fixe de 5% HT, prélevée mensuellement, sur la durée de votre mission.</em>
+                </>
+            ),
         }
     ]
 

@@ -81,12 +81,28 @@ export default function Hero() {
                 .hero-cta-arrow {
                     transition: transform 0.3s ease;
                 }
+                .marquee-content-scroll {
+                    will-change: transform;
+                    transform: translate3d(0, 0, 0);
+                    backface-visibility: hidden;
+                    -webkit-backface-visibility: hidden;
+                }
+                .marquee-content-scroll[aria-hidden="true"] {
+                    animation-delay: -12.5s;
+                }
                 @media (max-width: 768px) {
                     .hero {
                         min-height: 80vh;
                     }
                     .marquee-container {
                         top: 35%;
+                    }
+                    .marquee-wrapper {
+                        gap: 1rem;
+                    }
+                    .marquee-content-scroll {
+                        gap: 1rem;
+                        animation-duration: 30s;
                     }
                     .hero-big-text {
                         font-size: 25vw;

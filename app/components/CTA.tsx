@@ -11,7 +11,7 @@ export default function CTA() {
 
                     <div className="cta-content" style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
                         <h2 className="cta-heading">
-                            Prêt à faire <br />
+                            Prêt(e) à faire <br />
                             la différence ?
                         </h2>
                         <p className="cta-subtitle">
