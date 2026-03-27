@@ -39,7 +39,7 @@ export default function Footer() {
                         <div className="d-flex flex-col gap-6">
                             <span style={{ fontWeight: 800, opacity: 0.2, textTransform: 'uppercase', fontSize: '0.75rem', letterSpacing: '0.1em' }}>Légal</span>
                             <Link href="/legal" className="hover-text-dark">Mentions légales</Link>
-                            <Link href="/cgu" className="hover-text-dark">CGU</Link>
+                            <Link href="/cgu" className="hover-text-dark">CGU / CGV</Link>
                             <Link href="/privacy" className="hover-text-dark">Confidentialité</Link>
                         </div>
                         <div className="d-flex flex-col gap-6">
