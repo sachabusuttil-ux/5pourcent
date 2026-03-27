@@ -1,41 +1,36 @@
+import LegalPageShell from '@/app/components/legal/LegalPageShell'
+
 export default function LegalPage() {
   return (
-    <main
-      style={{
-        background: '#FFFFFB',
-        color: '#111',
-        minHeight: '100vh',
-        padding: '8rem 1.5rem 4rem',
-      }}
+    <LegalPageShell
+      title="Mentions légales"
+      subtitle="Informations légales relatives à l’éditeur, l’hébergement et l’utilisation du site 5% Consulting."
     >
-      <div style={{ maxWidth: '900px', margin: '0 auto', fontFamily: 'var(--font-syne)' }}>
-        <h1 style={{ fontSize: '2.5rem', marginBottom: '2rem' }}>Mentions légales</h1>
-
-        <p style={{ marginBottom: '1rem', lineHeight: 1.7 }}>
-          Le site accessible à l&apos;adresse https://5pourcent.consulting (ci-après le &ldquo;Site&rdquo;) est édité
-          par :
-        </p>
-
-        <p style={{ marginBottom: '1rem', lineHeight: 1.7 }}>
+      <section>
+        <h2 style={{ fontSize: '1.5rem', marginBottom: '0.75rem' }}>Éditeur du site</h2>
+        <p>Le site accessible à l&apos;adresse https://5pourcent.consulting (ci-après le &ldquo;Site&rdquo;) est édité par :</p>
+        <p style={{ marginTop: '0.75rem' }}>
           5% Consulting
           <br />
           Projet en cours de structuration
-          <br />
+        </p>
+        <p style={{ marginTop: '0.75rem' }}>
           Responsables de la publication :
           <br />
           Sacha BUSUTTIL
           <br />
           Charly BRAUNN
         </p>
-
-        <p style={{ marginBottom: '2rem', lineHeight: 1.7 }}>
+        <p style={{ marginTop: '0.75rem' }}>
           Contact :
           <br />
           📧 5pourcent.consulting@gmail.com
         </p>
+      </section>
 
-        <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Hébergement</h2>
-        <p style={{ marginBottom: '2rem', lineHeight: 1.7 }}>
+      <section>
+        <h2 style={{ fontSize: '1.5rem', marginBottom: '0.75rem' }}>Hébergement</h2>
+        <p>
           Le Site est hébergé par :
           <br />
           OVH SAS
@@ -46,26 +41,30 @@ export default function LegalPage() {
           <br />
           www.ovh.com
         </p>
+      </section>
 
-        <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Propriété intellectuelle</h2>
-        <p style={{ marginBottom: '2rem', lineHeight: 1.7 }}>
-          L&apos;ensemble du contenu présent sur le Site (textes, visuels, éléments graphiques, logo, etc.) est
-          protégé par le droit de la propriété intellectuelle.
-          <br />
-          <br />
+      <section>
+        <h2 style={{ fontSize: '1.5rem', marginBottom: '0.75rem' }}>Propriété intellectuelle</h2>
+        <p>
+          L&apos;ensemble du contenu présent sur le Site (textes, visuels, éléments graphiques, logo, etc.) est protégé
+          par le droit de la propriété intellectuelle.
+        </p>
+        <p style={{ marginTop: '0.75rem' }}>
           Toute reproduction, représentation ou diffusion, totale ou partielle, sans autorisation préalable est
           interdite.
         </p>
+      </section>
 
-        <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Responsabilité</h2>
-        <p style={{ marginBottom: '2rem', lineHeight: 1.7 }}>
+      <section>
+        <h2 style={{ fontSize: '1.5rem', marginBottom: '0.75rem' }}>Responsabilité</h2>
+        <p>
           Le Site a pour objectif de présenter un projet en cours de développement et de permettre la mise en relation
           future entre freelances et entreprises.
-          <br />
-          <br />
+        </p>
+        <p style={{ marginTop: '0.75rem' }}>
           Les informations diffusées sont fournies à titre indicatif et peuvent évoluer.
         </p>
-      </div>
-    </main>
+      </section>
+    </LegalPageShell>
   )
 }

@@ -8,12 +8,12 @@ export default function Hero() {
 
             {/* Marquee Section - Centered Absolute */}
             <div className="marquee-container">
-                <div className="marquee-wrapper">
-                    <div className="marquee-content-scroll">
+                <div className="hero-marquee-track">
+                    <div className="hero-marquee-group">
                         <span className="hero-big-text" style={{ color: '#FFFFFB' }}>Faites la différence<span style={{ color: '#FF4000' }}>.</span></span>
                         <span className="hero-big-text" style={{ color: '#FFFFFB' }}>Faites la différence<span style={{ color: '#FF4000' }}>.</span></span>
                     </div>
-                    <div className="marquee-content-scroll" aria-hidden="true">
+                    <div className="hero-marquee-group" aria-hidden="true">
                         <span className="hero-big-text" style={{ color: '#FFFFFB' }}>Faites la différence<span style={{ color: '#FF4000' }}>.</span></span>
                         <span className="hero-big-text" style={{ color: '#FFFFFB' }}>Faites la différence<span style={{ color: '#FF4000' }}>.</span></span>
                     </div>
@@ -81,29 +81,43 @@ export default function Hero() {
                 .hero-cta-arrow {
                     transition: transform 0.3s ease;
                 }
-                .marquee-content-scroll {
+                .hero-marquee-track {
+                    width: max-content;
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    animation: hero-marquee 26s linear infinite;
                     will-change: transform;
                     transform: translate3d(0, 0, 0);
                     backface-visibility: hidden;
                     -webkit-backface-visibility: hidden;
                 }
-                .marquee-content-scroll[aria-hidden="true"] {
-                    animation-delay: -12.5s;
+                .hero-marquee-group {
+                    display: flex;
+                    align-items: center;
+                    gap: 2rem;
+                    flex-shrink: 0;
+                }
+                @keyframes hero-marquee {
+                    from {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    to {
+                        transform: translate3d(calc(-50% - 1rem), 0, 0);
+                    }
                 }
                 @media (max-width: 768px) {
                     .hero {
-                        min-height: 80vh;
+                        min-height: 100vh;
                     }
                     .marquee-container {
-                        top: 35%;
+                        top: 32%;
                     }
-                    .marquee-wrapper {
-                        gap: 1rem;
-                    }
-                    .marquee-content-scroll {
+                    .hero-marquee-track {
                         gap: 1rem;
                         animation-duration: 30s;
                     }
+                    .hero-marquee-group { gap: 1rem; }
                     .hero-big-text {
                         font-size: 25vw;
                     }
@@ -111,16 +125,14 @@ export default function Hero() {
                         font-size: 1.8rem !important;
                         margin-bottom: 2rem !important;
                     }
-                    /* Remonter le contenu pour éviter d'avoir à scroll dans le hero */
                     .hero-container {
-                        justify-content: flex-start !important;
-                        height: auto !important;
-                        min-height: 0 !important;
-                        padding-bottom: 1rem !important;
+                        justify-content: flex-end !important;
+                        min-height: 100vh !important;
+                        height: 100% !important;
+                        padding-bottom: 9vh !important;
                     }
                     .hero-content {
-                        /* Redescendre légèrement le titre/CTA tout en restant visible sans scroll */
-                        margin-top: 5vh !important;
+                        margin-top: 0 !important;
                         margin-bottom: 0 !important;
                     }
                     .hero-cta-btn {

@@ -12,7 +12,7 @@ export default function HowItWorks() {
         {
             id: "02",
             title: "Recevez des missions",
-            desc: "Nous filtrons les opportunités pour ne vous proposer que le meilleur en accord avec vos valeurs. Nous soumettrons votre profil sous 48h à nos entreprises partenaires lorsqu'une mission correspondante nous est communiquée.",
+            desc: "Nous soumettrons votre profil sous 48h à nos entreprises partenaires lorsqu’une mission correspondant à votre profil nous sera communiquée.",
         },
         {
             id: "03",
@@ -21,7 +21,7 @@ export default function HowItWorks() {
                 <>
                     Nous vous trouvons une mission, organisons les rencontres et l'administratif, vous gardez 95% de votre valeur*.
                     <br />
-                    <em>*Commission fixe de 5% HT, prélevée mensuellement, sur la durée de votre mission.</em>
+                    <em style={{ fontSize: '0.92em', fontWeight: 400, opacity: 0.85 }}>*Commission fixe de 5% HT, prélevée mensuellement, sur la durée de votre mission.</em>
                 </>
             ),
         }
