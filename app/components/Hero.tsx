@@ -23,7 +23,7 @@ export default function Hero() {
             <div className="container d-flex flex-col items-start justify-end h-full hero-container" style={{ zIndex: 10, paddingBottom: '2rem', pointerEvents: 'none', height: '100%', minHeight: '100vh', justifyContent: 'flex-end' }}>
 
                 <div className="hero-content" style={{ maxWidth: '650px', pointerEvents: 'auto', marginBottom: '2vh' }}> {/* Significantly lowered from 12vh to 2vh to be at the bottom */}
-                    <p className="hero-headline" style={{ fontSize: '2.5rem', color: '#FFFFFB', fontFamily: 'var(--font-syne)', fontWeight: 400, marginBottom: '3rem', lineHeight: 1.3 }}>
+                    <p className="hero-headline" style={{ fontSize: '2.5rem', color: '#FFFFFB', fontFamily: 'var(--font-syne)', fontWeight: 400, marginBottom: '1.8rem', lineHeight: 1.3 }}>
                         <span style={{ textDecoration: 'none' }}>
                             Le choix d'une collaboration
                             <br />
