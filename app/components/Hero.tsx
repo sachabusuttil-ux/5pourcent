@@ -123,7 +123,7 @@ export default function Hero() {
                     }
                     .hero-headline {
                         font-size: 1.8rem !important;
-                        margin-bottom: 2rem !important;
+                        margin-bottom: 1rem !important;
                     }
                     .hero-container {
                         justify-content: flex-end !important;
