@@ -1,8 +1,11 @@
 'use client'
 
 import { useEffect } from 'react'
+import { usePathname } from 'next/navigation'
 
 export default function ScrollAnimation() {
+    const pathname = usePathname()
+
     useEffect(() => {
         const observerOptions = {
             threshold: 0.12,
@@ -18,11 +21,20 @@ export default function ScrollAnimation() {
             })
         }, observerOptions)
 
-        const targets = document.querySelectorAll('.reveal-up, .reveal-section')
-        targets.forEach((target) => observer.observe(target))
+        // Re-bind observers on route changes to avoid hidden sections
+        // when navigating away and back to the homepage.
+        const bindTargets = () => {
+            const targets = document.querySelectorAll('.reveal-up, .reveal-section')
+            targets.forEach((target) => observer.observe(target))
+        }
 
-        return () => observer.disconnect()
-    }, [])
+        const rafId = window.requestAnimationFrame(bindTargets)
+
+        return () => {
+            window.cancelAnimationFrame(rafId)
+            observer.disconnect()
+        }
+    }, [pathname])
 
     return null
 }

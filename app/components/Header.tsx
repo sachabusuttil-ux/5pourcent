@@ -38,6 +38,10 @@ export default function Header() {
         } else {
             document.body.classList.remove('no-scroll')
         }
+
+        return () => {
+            document.body.classList.remove('no-scroll')
+        }
     }, [isMenuOpen])
 
     const closeMenu = () => setIsMenuOpen(false)
