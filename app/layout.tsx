@@ -8,7 +8,7 @@ const syne = Syne({ subsets: ['latin'], variable: '--font-syne' })
 
 export const metadata: Metadata = {
   title: '5% - La plateforme freelance–entreprise',
-  description: 'La plateforme freelance–entreprise à 5 %. Vous trouvez une mission, vous gardez 95 % de votre TJM.',
+  description: 'La plateforme freelance–entreprise à 5 %. Nous vous trouvons une mission, vous gardez 95 % de votre TJM.',
   icons: {
     icon: [
       { url: '/logo-black.png', media: '(prefers-color-scheme: light)' },
